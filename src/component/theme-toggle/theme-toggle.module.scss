@@ -1,0 +1,43 @@
+.themeToggle {
+    display: flex;
+    position: fixed;
+    top: var(--spacing-300);
+    right: var(--spacing-300);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-50);
+    z-index: var(--zindex-header);
+    box-shadow: var(--shadow-200);
+    border-radius: var(--radius-full);
+    background-color: var(--color-foreground);
+    padding: 0 var(--spacing-100);
+    height: 3rem;
+    color: var(--color-background);
+
+    input {
+        display: none;
+    }
+
+    &Label {
+        $toggle-size: 1.5rem;
+        $toggle-padding: 0.125rem;
+
+        display: block;
+        position: relative;
+        border-radius: var(--radius-full);
+        background-color: var(--color-card);
+        padding: 0.125rem;
+        width: 3rem;
+        height: $toggle-size;
+
+        &Switch {
+            display: block;
+            position: absolute;
+            left: 0.125rem;
+            border-radius: var(--radius-full);
+            background-color: var(--color-foreground);
+            width: calc($toggle-size - 0.25rem);
+            height: calc($toggle-size - 0.25rem);
+        }
+    }
+}

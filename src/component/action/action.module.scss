@@ -1,0 +1,15 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-50);
+    cursor: pointer;
+    border-radius: var(--radius-m);
+    background-color: var(--color-primary);
+    padding: var(--spacing-50) var(--spacing-100);
+    color: var(--color-background);
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}

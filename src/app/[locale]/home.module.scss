@@ -1,0 +1,75 @@
+.home {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+
+    &Headline {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+
+        &Hello {
+            z-index: var(--zindex-400);
+            margin-bottom: -120px;
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-display-xl);
+            line-height: 1;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &Image {
+            z-index: var(--zindex-800);
+            box-shadow: var(--shadow-200);
+            border-radius: var(--radius-l);
+            object-fit: cover;
+        }
+
+        &Name {
+            z-index: var(--zindex-900);
+            margin-top: -120px;
+            color: var(--color-primary);
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-display-l);
+            line-height: 1;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    &Content {
+        display: flex;
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+        left: 40px;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &Social {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-100);
+
+            &Link {
+                font-size: var(--font-text-m);
+                text-transform: uppercase;
+            }
+        }
+
+        &Who {
+            max-width: 400px;
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-text-xl);
+            line-height: 1.1;
+            text-align: right;
+            text-transform: uppercase;
+        }
+    }
+}
