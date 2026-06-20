@@ -1,0 +1,64 @@
+<div class="location-wrapper">
+    <div class="indicator">Lille, France</div>
+    <div class="indicator" data-date>—</div>
+    <div class="indicator" data-time>—</div>
+</div>
+
+<script>
+    const TIME_ZONE = 'Europe/Paris';
+    const dateEl = document.querySelector('[data-date]');
+    const timeEl = document.querySelector('[data-time]');
+
+    const dateFormat = new Intl.DateTimeFormat('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+        timeZone: TIME_ZONE,
+    });
+    const timeFormat = new Intl.DateTimeFormat('en-US', {
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true,
+        timeZone: TIME_ZONE,
+    });
+
+    const updateData = () => {
+        if (!dateEl || !timeEl) return;
+
+        const now = new Date();
+        dateEl.textContent = dateFormat.format(now);
+        timeEl.textContent = timeFormat.format(now);
+    };
+
+    updateData();
+    setInterval(updateData, 1000);
+</script>
+
+<style>
+    .location-wrapper {
+        position: sticky;
+        bottom: 0;
+        padding: var(--spacing-safe);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: var(--spacing-50);
+        mix-blend-mode: difference;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .indicator {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0;
+            text-transform: uppercase;
+        }
+    }
+</style>

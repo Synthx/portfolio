@@ -1,0 +1,42 @@
+---
+import {EMAIL_URL, GITHUB_URL, LINKEDIN_URL} from "@/config/constant.ts";
+import LocationWrapper from "@/components/LocationWrapper.astro";
+---
+
+<LocationWrapper />
+<footer class="footer">
+    <p class="text-base text-fg-subtle">© 2026 Remi Taniel. All rights reserved.</p>
+    <div class="flex items-center gap-4">
+        <a class="social-link" href={EMAIL_URL}>Email</a>
+        <a class="social-link" target="_blank" href={LINKEDIN_URL}>Linkedin</a>
+        <a class="social-link" target="_blank" href={GITHUB_URL}>Github</a>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        padding: var(--spacing-safe);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: var(--spacing-50);
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .social-link {
+            color: var(--color-fg-subtle);
+            text-transform: uppercase;
+            font-size: 1rem;
+
+            &:hover {
+                color: var(--color-fg);
+                text-decoration: underline;
+            }
+        }
+    }
+</style>

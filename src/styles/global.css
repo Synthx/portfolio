@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "./tokens/index.css";
+
+@theme inline {
+    --font-antonio: var(--font-antonio);
+    /* color */
+    --color-fg: var(--color-fg);
+    --color-fg-subtle: var(--color-fg-subtle);
+    --color-fg-brand: var(--color-fg-brand);
+    --color-fg-accent: var(--color-fg-accent);
+    /* spacing */
+    --spacing-50: var(--spacing-50);
+    --spacing-100: var(--spacing-100);
+    --spacing-150: var(--spacing-150);
+    --spacing-200: var(--spacing-200);
+    --spacing-safe: var(--spacing-safe);
+}
+
+html {
+    scrollbar-color: var(--color-fg) transparent;
+    scrollbar-gutter: auto;
+    scrollbar-width: thin;
+}
+
+body {
+    min-height: 100dvh;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    overflow-x: clip;
+    font-family: var(--font-antonio), system-ui;
+}

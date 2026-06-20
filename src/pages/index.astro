@@ -1,0 +1,89 @@
+---
+import Layout from "@/layout/Layout.astro";
+---
+
+<Layout>
+    <section class="introduction-section">
+        <div class="relative flex flex-col">
+            <p class="uppercase text-l md:text-3xl text-fg-subtle">Hey, everybody call me <span class="text-fg-brand line-through">Pinpin</span>,
+                but I'm</p>
+            <h1 class="name">Remi<br/>Taniel</h1>
+        </div>
+    </section>
+    <section class="who-section">
+        <div class="who-section-picture"></div>
+        <div class="who-section-content">
+            <h2 class="font-bold text-base md:text-lg uppercase text-fg-subtle">Who am I</h2>
+            <p class="text-2xl md:text-3xl text-pretty">I'm a French software engineer rooted in Lille — and proudly so.
+                I craft digital
+                products and experiences especially for the web, with a sharp
+                eye for craftsmanship & code quality. I experiment constantly, share openly through
+                talks, and believe knowledge grows when it circulates. On weekends, you'll find me backing LOSC or
+                unwinding with a well-deserved beer.</p>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .introduction-section {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: calc(var(--spacing-safe) * 2) var(--spacing-safe);
+
+        .name {
+            text-transform: uppercase;
+            text-wrap: pretty;
+            font-weight: 900;
+            font-size: 35vw;
+            line-height: 1;
+            letter-spacing: 0;
+
+            @media (min-width: 768px) {
+                font-size: 30vh;
+            }
+        }
+    }
+
+    .who-section {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: stretch;
+            height: 720px;
+        }
+
+        .who-section-picture {
+            background-color: var(--color-bg-inverse);
+            display: block;
+            height: 480px;
+            width: 100%;
+
+            @media (min-width: 768px) {
+                flex: 1;
+                height: 100%;
+            }
+        }
+
+        .who-section-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            padding: var(--spacing-safe);
+            gap: var(--spacing-100);
+
+            @media (min-width: 768px) {
+                flex: 1;
+            }
+        }
+    }
+</style>

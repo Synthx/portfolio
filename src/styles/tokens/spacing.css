@@ -1,0 +1,11 @@
+:root {
+    --spacing-50: 0.5rem;
+    --spacing-100: 1rem;
+    --spacing-150: 1.5rem;
+    --spacing-200: 2rem;
+    --spacing-safe: 1.5rem;
+
+    @media (min-width: 768px) {
+        --spacing-safe: 3rem;
+    }
+}

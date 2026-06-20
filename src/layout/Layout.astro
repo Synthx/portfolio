@@ -1,0 +1,36 @@
+---
+import {APP_NAME} from "@/config/constant.ts";
+import {Font} from "astro:assets";
+import '@/styles/global.css';
+import LayoutFooter from "@/layout/LayoutFooter.astro";
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<html class="antialiased" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:locale" content="fr-FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content={APP_NAME} />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="generator" content={Astro.generator}/>
+    <title>{APP_NAME}</title>
+    <Font cssVariable="--font-antonio" preload/>
+</head>
+<body>
+<main class="flex flex-col items-stretch">
+    <slot/>
+</main>
+<LayoutFooter transition:persist />
+</body>
+</html>
