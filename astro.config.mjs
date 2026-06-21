@@ -1,5 +1,5 @@
 // @ts-check
-import {defineConfig, fontProviders} from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
@@ -7,13 +7,13 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
     site: 'https://iampinpin.dev',
     vite: {
-        plugins: [tailwindcss()]
+        plugins: [tailwindcss()],
     },
     fonts: [
         {
             provider: fontProviders.google(),
-            name: "Antonio",
-            cssVariable: "--font-antonio",
+            name: 'Antonio',
+            cssVariable: '--font-antonio',
             weights: [400, 600, 700, 900],
         },
     ],

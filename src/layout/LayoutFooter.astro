@@ -1,21 +1,36 @@
 ---
-import {EMAIL_URL, GITHUB_URL, LINKEDIN_URL} from "@/config/constant.ts";
-import LocationWrapper from "@/components/LocationWrapper.astro";
+import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL } from '@/config/constant.ts';
+import LocationWrapper from '@/components/LocationWrapper.astro';
 ---
 
 <LocationWrapper />
 <footer class="footer">
-    <p class="text-base text-fg-subtle">© 2026 Remi Taniel. All rights reserved.</p>
-    <div class="flex items-center gap-4">
-        <a class="social-link" href={EMAIL_URL}>Email</a>
-        <a class="social-link" target="_blank" href={LINKEDIN_URL}>Linkedin</a>
-        <a class="social-link" target="_blank" href={GITHUB_URL}>Github</a>
+    <div class="flex flex-col items-start gap-200">
+        <div class="flex flex-col gap-25">
+            <h2 class="text-fg text-xl">Get in touch</h2>
+            <p class="text-fg-subtle text-base">
+                Whether it's about work, a side project, nerding out over tech
+                and product, or just having a friendly chat. Feel free to drop
+                me a message anytime!
+            </p>
+        </div>
+        <div class="flex items-center gap-100">
+            <a class="social-link" href={EMAIL_URL}>Email</a>
+            <a class="social-link" target="_blank" href={LINKEDIN_URL}>
+                Linkedin
+            </a>
+            <a class="social-link" target="_blank" href={GITHUB_URL}>Github</a>
+        </div>
     </div>
+    <p class="text-fg-subtle text-right text-base">
+        © 2026 Remi Taniel. All rights reserved.
+    </p>
 </footer>
 
 <style>
     .footer {
-        padding: var(--spacing-safe);
+        padding-inline: var(--spacing-safe);
+        padding-bottom: var(--spacing-safe);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -24,7 +39,7 @@ import LocationWrapper from "@/components/LocationWrapper.astro";
 
         @media (min-width: 768px) {
             flex-direction: row;
-            align-items: center;
+            align-items: flex-end;
             justify-content: space-between;
         }
 

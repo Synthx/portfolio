@@ -1,22 +1,27 @@
 {
-  "name": "portfolio",
-  "type": "module",
-  "version": "0.0.1",
-  "engines": {
-    "node": ">=24"
-  },
-  "scripts": {
-    "start": "npx astro dev",
-    "build": "npx astro check && npx astro build",
-    "preview": "npx astro preview"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.3.1",
-    "astro": "^6.4.7",
-    "tailwindcss": "^4.3.1"
-  },
-  "devDependencies": {
-    "@astrojs/check": "^0.9.9",
-    "typescript": "^6.0.3"
-  }
+    "name": "portfolio",
+    "type": "module",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">=24"
+    },
+    "scripts": {
+        "start": "npx astro dev",
+        "build": "npx astro check && npx astro build",
+        "preview": "npx astro preview",
+        "format": "npx prettier --write .",
+        "lint": "npx prettier --check ."
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.3.1",
+        "astro": "^6.4.7",
+        "tailwindcss": "^4.3.1"
+    },
+    "devDependencies": {
+        "@astrojs/check": "^0.9.9",
+        "prettier": "^3.8.4",
+        "prettier-plugin-astro": "^0.14.1",
+        "prettier-plugin-tailwindcss": "^0.8.0",
+        "typescript": "^6.0.3"
+    }
 }

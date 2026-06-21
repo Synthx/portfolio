@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "./tokens/index.css";
+@import 'tailwindcss';
+@import './tokens/index.css';
 
 @theme inline {
     --font-antonio: var(--font-antonio);
@@ -9,6 +9,7 @@
     --color-fg-brand: var(--color-fg-brand);
     --color-fg-accent: var(--color-fg-accent);
     /* spacing */
+    --spacing-25: var(--spacing-25);
     --spacing-50: var(--spacing-50);
     --spacing-100: var(--spacing-100);
     --spacing-150: var(--spacing-150);

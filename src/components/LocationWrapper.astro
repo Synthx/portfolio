@@ -38,6 +38,7 @@
     .location-wrapper {
         position: sticky;
         bottom: 0;
+        z-index: 10;
         padding: var(--spacing-safe);
         display: flex;
         flex-direction: column;
@@ -53,12 +54,22 @@
         }
 
         .indicator {
+            flex: 1;
             color: #fff;
             font-size: 1rem;
             font-weight: 700;
             line-height: 1;
             letter-spacing: 0;
+            text-align: center;
             text-transform: uppercase;
+
+            &:first-child {
+                text-align: left;
+            }
+
+            &:last-child {
+                text-align: right;
+            }
         }
     }
 </style>
