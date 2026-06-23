@@ -1,0 +1,41 @@
+<section class="introduction-section">
+    <p class="text-l text-fg-subtle uppercase md:text-3xl">
+        Hey, everybody call me <span class="text-fg-brand line-through"
+            >Pinpin</span
+        >, but I'm
+    </p>
+    <h1 class="name">Remi<br />Taniel</h1>
+</section>
+
+<style>
+    .introduction-section {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: calc(var(--spacing-safe) * 2) var(--spacing-safe);
+
+        @media (min-width: 768px) {
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+
+        .name {
+            text-transform: uppercase;
+            text-wrap: pretty;
+            font-weight: 900;
+            font-size: 35vw;
+            line-height: 1;
+            letter-spacing: 0;
+            text-align: center;
+
+            @media (min-width: 768px) {
+                font-size: 30vh;
+                text-align: left;
+            }
+        }
+    }
+</style>

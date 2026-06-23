@@ -1,6 +1,7 @@
 ---
 import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL } from '@/config/constant.ts';
 import LocationWrapper from '@/components/LocationWrapper.astro';
+import ReusableSvgIcon from '@/components/ReusableSvgIcon.astro';
 ---
 
 <LocationWrapper />
@@ -15,11 +16,15 @@ import LocationWrapper from '@/components/LocationWrapper.astro';
             </p>
         </div>
         <div class="flex items-center gap-100">
-            <a class="social-link" href={EMAIL_URL}>Email</a>
+            <a class="social-link" href={EMAIL_URL}> Email </a>
             <a class="social-link" target="_blank" href={LINKEDIN_URL}>
                 Linkedin
+                <ReusableSvgIcon name="arrow-right-up-line" />
             </a>
-            <a class="social-link" target="_blank" href={GITHUB_URL}>Github</a>
+            <a class="social-link" target="_blank" href={GITHUB_URL}>
+                Github
+                <ReusableSvgIcon name="arrow-right-up-line" />
+            </a>
         </div>
     </div>
     <p class="text-fg-subtle text-right text-base">
@@ -47,10 +52,17 @@ import LocationWrapper from '@/components/LocationWrapper.astro';
             color: var(--color-fg-subtle);
             text-transform: uppercase;
             font-size: 1rem;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+
+            svg {
+                height: 24px;
+                width: 24px;
+            }
 
             &:hover {
-                color: var(--color-fg);
-                text-decoration: underline;
+                color: var(--color-fg-brand);
             }
         }
     }

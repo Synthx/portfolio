@@ -1,9 +1,10 @@
 :root {
     --color-bg: rgb(255, 251, 246);
-    --color-bg-brand: #e41b13;
+    --color-bg-subtle: rgb(239, 237, 234);
+    --color-bg-brand: #5a3eff;
     --color-bg-inverse: #000;
     --color-fg: #000;
     --color-fg-subtle: #2a2a2a;
-    --color-fg-brand: #e41b13;
+    --color-fg-brand: #5a3eff;
     --color-fg-accent: #211e5f;
 }

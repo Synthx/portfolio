@@ -1,0 +1,31 @@
+[
+    {
+        "id": "jetdev-software-engineer",
+        "title": "Software Engineer",
+        "job": "Jetdev",
+        "startDate": "2021-09-01",
+        "link": "https://jetdev.fr/",
+        "color": "#ff772c",
+        "logo": "@/assets/images/works/jetdev.svg"
+    },
+    {
+        "id": "viveris-software-engineer",
+        "title": "Work-study Software Engineer",
+        "job": "Viveris",
+        "startDate": "2018-09-01",
+        "endDate": "2021-09-01",
+        "link": "https://www.viveris.fr/",
+        "color": "#ff5046",
+        "logo": "@/assets/images/works/viveris.svg"
+    },
+    {
+        "id": "polytech-degree",
+        "title": "Engineering Degree",
+        "job": "Polytech",
+        "startDate": "2016-09-01",
+        "endDate": "2021-09-01",
+        "link": "https://www.polytech-lille.fr/",
+        "color": "#008ddd",
+        "logo": "@/assets/images/works/polytech.svg"
+    }
+]
