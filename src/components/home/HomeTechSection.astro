@@ -1,0 +1,131 @@
+---
+
+---
+
+<section class="tech-section">
+    <h2 class="text-fg-subtle px-safe text-base font-bold uppercase md:text-lg">
+        Ce que je fais
+    </h2>
+    <div class="grid-section">
+        <h3 class="grid-section-title">Manifesto</h3>
+        <div class="flex flex-col items-start gap-100">
+            <p class="text-base">
+                La plus belle architecture du monde ne vaut rien si personne ne
+                se sert du produit. On peut passer trois semaines à peaufiner
+                une abstraction élégante pendant que le bouton « Payer » reste
+                cassé. <span class="font-bold">Spoiler:</span> le client s'en fiche
+                de ton pattern. Il veut que ça marche.
+            </p>
+            <p class="text-base">
+                La tech n'est pas une fin, c'est un moyen. Le code sert le
+                produit, le produit sert les utilisateurs, et les utilisateurs
+                paient les serveurs. La meilleure techno, c'est souvent la plus
+                ennuyeuse : celle qui dort bien la nuit plutôt que celle qui
+                brille en conf.
+            </p>
+        </div>
+    </div>
+    <div class="grid-section">
+        <h3 class="grid-section-title">Tech Stack</h3>
+        <div class="flex flex-col gap-100">
+            <p>
+                Le front, c'est du front. Le back, c'est du back. Et je fais les
+                deux
+            </p>
+            <div class="flex flex-col gap-25">
+                <p class="font-bold uppercase">Frontend</p>
+                <ul>
+                    <li>
+                        <span class="font-bold">Language:</span> TypeScript, JavaScript,
+                        HTML, CSS
+                    </li>
+                    <li>
+                        <span class="font-bold">Framework:</span> Angular, React,
+                        Astro
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-25">
+                <p class="font-bold uppercase">Backend</p>
+                <ul>
+                    <li>
+                        <span class="font-bold">Language:</span> Java, NodeJS
+                    </li>
+                    <li>
+                        <span class="font-bold">Framework:</span> SpringBoot
+                    </li>
+                    <li>
+                        <span class="font-bold">Base de données:</span> PostgreSQL,
+                        MongoDB
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-25">
+                <p class="font-bold uppercase">Autres</p>
+                <ul>
+                    <li>
+                        <span class="font-bold">Cloud:</span> GCP, Firebase
+                    </li>
+                    <li>
+                        <span class="font-bold">CI/CD:</span> GitHub Actions, Gitlab
+                        CI
+                    </li>
+                    <li>
+                        <span class="font-bold">Versioning:</span> Git, GitHub, Gitlab
+                    </li>
+                    <li>
+                        <span class="font-bold">Monitoring:</span> Datadog
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="grid-section">
+        <h3 class="grid-section-title">Lightning Round</h3>
+        <ul>
+            <li>Les chiens, évidemment</li>
+            <li>Café.exe a cessé de fonctionner</li>
+            <li>Toujours côté couloir</li>
+            <li>Cookie Dough</li>
+            <li>Le padel, puis la bière. Dans cet ordre</li>
+            <li>Adepte du DDD (Drunk Driven Development)</li>
+            <li>Une mise en prod un vendredi ? Audacieux</li>
+            <li>Nous sommes les enfants de Lille</li>
+            <li>Le reste est négociable</li>
+        </ul>
+    </div>
+</section>
+
+<style>
+    .tech-section {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-100);
+        padding-block: var(--spacing-safe);
+    }
+
+    .grid-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-inline: var(--spacing-safe);
+        padding-block: var(--spacing-200);
+        gap: var(--spacing-100);
+        border-top: 1px solid var(--color-bg-inverse);
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .grid-section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 2rem;
+        }
+    }
+</style>
