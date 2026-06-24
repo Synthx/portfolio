@@ -1,5 +1,5 @@
 ---
-import { APP_NAME } from '@/config/constant.ts';
+import { APP_NAME, LOCALE } from '@/config/constant.ts';
 import { Font } from 'astro:assets';
 import '@/styles/global.css';
 import LayoutFooter from '@/layout/LayoutFooter.astro';
@@ -7,7 +7,7 @@ import LayoutFooter from '@/layout/LayoutFooter.astro';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
-<html class="antialiased" lang="en">
+<html class="antialiased" lang={LOCALE}>
     <head>
         <meta charset="utf-8" />
         <meta
@@ -15,8 +15,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:locale" content="fr-FR" />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content={LOCALE} />
         <meta property="og:url" content={canonicalURL} />
         <meta property="og:site_name" content={APP_NAME} />
         <link rel="canonical" href={canonicalURL} />
@@ -24,6 +24,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
+        <meta
+            name="description"
+            content="Ingénieur logiciel à Lille. Je construis des produits web solides, simples et utiles. Padel, bière et clean code — dans le désordre. Discutons-en !"
+        />
         <title>{APP_NAME}</title>
         <Font cssVariable="--font-antonio" preload />
     </head>

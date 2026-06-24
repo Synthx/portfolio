@@ -6,8 +6,18 @@ const allWorks = (await getCollection('work')).map((w) => w.data);
 ---
 
 <section class="work-section">
-    <h2 class="text-fg-subtle px-safe text-6xl font-bold">I work tech</h2>
-    <div class="work-grid" role="list">
+    <div class="px-safe flex flex-col gap-100">
+        <h2 class="text-fg-subtle text-6xl font-bold">Mon parcours</h2>
+        <p class="text-fg-subtle text-base">
+            Actuellement Tech Lead chez Jetdev, au service de Kiabi, je lead une
+            équipe d'une dizaine de jeunes développeurs au sein du Digital Lab.
+            Notre terrain de jeu : les besoins métier, les vrais, ceux qui te
+            font jongler avec des technos variées et t'empêchent de t'ennuyer.
+            Mon rôle ? Faire monter l'équipe en compétence autant que les
+            produits qu'on livre.
+        </p>
+    </div>
+    <div class="work-grid">
         {allWorks.map((work) => <HomeWorkSectionTile work={work} />)}
     </div>
 </section>

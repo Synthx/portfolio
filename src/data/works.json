@@ -1,7 +1,7 @@
 [
     {
         "id": "jetdev-software-engineer",
-        "title": "Software Engineer",
+        "title": "Ingénieur Logiciel",
         "job": "Jetdev",
         "startDate": "2021-09-01",
         "link": "https://jetdev.fr/",
@@ -10,7 +10,7 @@
     },
     {
         "id": "viveris-software-engineer",
-        "title": "Work-study Software Engineer",
+        "title": "Ingénieur Logiciel en Alternance",
         "job": "Viveris",
         "startDate": "2018-09-01",
         "endDate": "2021-09-01",
@@ -20,7 +20,7 @@
     },
     {
         "id": "polytech-degree",
-        "title": "Engineering Degree",
+        "title": "Diplôme d'Ingénieur",
         "job": "Polytech",
         "startDate": "2016-09-01",
         "endDate": "2021-09-01",

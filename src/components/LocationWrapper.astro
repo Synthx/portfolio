@@ -5,20 +5,21 @@
 </div>
 
 <script>
+    import { LOCALE } from '@/config/constant.ts';
+
     const TIME_ZONE = 'Europe/Paris';
     const dateEl = document.querySelector('[data-date]');
     const timeEl = document.querySelector('[data-time]');
 
-    const dateFormat = new Intl.DateTimeFormat('en-US', {
+    const dateFormat = new Intl.DateTimeFormat(LOCALE, {
         month: 'short',
         day: 'numeric',
         year: 'numeric',
         timeZone: TIME_ZONE,
     });
-    const timeFormat = new Intl.DateTimeFormat('en-US', {
+    const timeFormat = new Intl.DateTimeFormat(LOCALE, {
         hour: 'numeric',
         minute: '2-digit',
-        hour12: true,
         timeZone: TIME_ZONE,
     });
 

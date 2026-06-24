@@ -1,29 +1,31 @@
 ---
 import { Picture } from 'astro:assets';
-import MePicture from '@/assets/images/me.webp';
+import MePicture from '@/assets/images/me.jpg';
 ---
 
 <section class="who-section">
     <div class="who-section-picture">
         <Picture
-            class="h-full w-full scale-100 object-cover grayscale transition-all duration-700 ease-in-out hover:scale-105 hover:grayscale-0"
+            class="transition-filter h-full w-full scale-100 object-cover grayscale duration-700 ease-in-out hover:scale-105 hover:grayscale-0"
             src={MePicture}
             alt="Me"
             layout="constrained"
             formats={['avif', 'webp']}
+            loading="eager"
         />
     </div>
     <div class="who-section-content">
         <h2 class="text-fg-subtle text-base font-bold uppercase md:text-lg">
-            Who am I
+            Qui suis-je
         </h2>
-        <p class="text-2xl text-pretty md:text-3xl">
-            I'm a French software engineer rooted in Lille — and proudly so. I
-            craft digital products and experiences especially for the web, with
-            a sharp eye for craftsmanship & code quality. I experiment
-            constantly, share openly through talks, and believe knowledge grows
-            when it circulates. On weekends, you'll find me backing LOSC or
-            unwinding with a well-deserved beer.
+        <p class="text-2xl text-pretty md:text-2xl">
+            Ingénieur logiciel lillois — et fier de l'être. Je conçois des
+            produits et des expériences numériques, surtout pour le web, avec
+            une obsession assumée pour la qualité du code et le craft.<br />
+            J'expérimente en permanence, je partage sans retenue lors de talks, et
+            je suis convaincu que la connaissance prend de la valeur quand elle circule.
+            Le week-end, on me trouve à supporter le LOSC ou à compiler tranquillement
+            autour d'une bière bien méritée.
         </p>
     </div>
 </section>

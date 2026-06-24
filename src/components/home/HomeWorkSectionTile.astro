@@ -1,6 +1,5 @@
 ---
-import Image from 'astro/components/Image.astro';
-import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import ReusableSvgIcon from '@/components/ReusableSvgIcon.astro';
 
@@ -10,10 +9,10 @@ interface Props {
 
 const { work } = Astro.props;
 
-const formatter = new Intl.DateTimeFormat('en-US', { year: 'numeric' });
+const formatter = new Intl.DateTimeFormat('fr-FR', { year: 'numeric' });
 ---
 
-<a class="work-tile" role="listitem" target="_blank" href={work.link}>
+<a class="work-tile" target="_blank" href={work.link}>
     <div class="work-tile-picture">
         <Image
             class="work-tile-logo"
