@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, fontProviders } from 'astro/config';
+import { defineConfig, fontProviders, svgoOptimizer } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
@@ -8,6 +8,9 @@ export default defineConfig({
     site: 'https://iampinpin.dev',
     vite: {
         plugins: [tailwindcss()],
+    },
+    experimental: {
+        svgOptimizer: svgoOptimizer(),
     },
     fonts: [
         {

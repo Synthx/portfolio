@@ -4,7 +4,7 @@
 
 <section class="tech-section">
     <h2 class="text-fg-subtle px-safe text-base font-bold uppercase md:text-lg">
-        Ce que je fais
+        Ce qui me définit
     </h2>
     <div class="grid-section">
         <h3 class="grid-section-title">Manifesto</h3>
@@ -13,8 +13,8 @@
                 La plus belle architecture du monde ne vaut rien si personne ne
                 se sert du produit. On peut passer trois semaines à peaufiner
                 une abstraction élégante pendant que le bouton « Payer » reste
-                cassé. <span class="font-bold">Spoiler:</span> le client s'en fiche
-                de ton pattern. Il veut que ça marche.
+                cassé.<br /><span class="font-bold">Spoiler:</span> le client s'en
+                fiche de ton pattern. Il veut que ça marche.
             </p>
             <p class="text-base">
                 La tech n'est pas une fin, c'est un moyen. Le code sert le
@@ -81,17 +81,62 @@
         </div>
     </div>
     <div class="grid-section">
-        <h3 class="grid-section-title">Lightning Round</h3>
+        <h3 class="grid-section-title">Mes services</h3>
         <ul>
-            <li>Les chiens, évidemment</li>
-            <li>Café.exe a cessé de fonctionner</li>
-            <li>Toujours côté couloir</li>
-            <li>Cookie Dough</li>
-            <li>Le padel, puis la bière. Dans cet ordre</li>
-            <li>Adepte du DDD (Drunk Driven Development)</li>
-            <li>Une mise en prod un vendredi ? Audacieux</li>
-            <li>Nous sommes les enfants de Lille</li>
-            <li>Le reste est négociable</li>
+            <li>
+                <span class="font-bold">Développement web full-stack:</span> Je conçois
+                des produits web accessibles, performants et maintenables, de bout
+                en bout, du front (Angular, React, Astro) au back (Java/Spring Boot,
+                Node.js).
+            </li>
+            <li>
+                <span class="font-bold"
+                    >Tech leadership & accompagnement d'équipe:</span
+                > J'encadre des équipes de développeurs, je fais grandir les juniors
+                et je pose un cadre technique sain : revues de code, bonnes pratiques,
+                outillage, montée en compétence. Mon rôle, ce n'est pas que d'être
+                une bête techniquement, c'est aussi de créer un environnement où chacun
+                progresse et où les bonnes idées arrivent en prod.
+            </li>
+            <li>
+                <span class="font-bold">Architecture & choix techniques:</span> J'aide
+                à structurer des applications solides et à choisir les bonnes technos,
+                celles qui tiennent la route dans le temps et qui répondent au besoin
+                du client, pas de la tech.
+            </li>
+            <li>
+                <span class="font-bold">Partage & transmission:</span> Talks, articles
+                de blog, formations, sessions de veille : je crois que la connaissance
+                grandit quand elle circule. Si ton équipe veut monter en compétence,
+                on en parle quand tu veux.
+            </li>
+        </ul>
+    </div>
+    <div class="grid-section">
+        <h3 class="grid-section-title">En quelques mots</h3>
+        <ul class="lightning-round">
+            <li><span class="emoji">🐕</span>Les chiens, évidemment</li>
+            <li>
+                <span class="emoji">☕</span>Café.exe a cessé de fonctionner
+            </li>
+            <li><span class="emoji">✈️</span>Toujours côté couloir</li>
+            <li><span class="emoji">🍦</span>Cookie Dough</li>
+            <li>
+                <span class="emoji">🎾</span>Le padel, puis la bière. Dans cet
+                ordre
+            </li>
+            <li>
+                <span class="emoji">🍺</span>Adepte du DDD (Drunk Driven
+                Development)
+            </li>
+            <li>
+                <span class="emoji">🚀</span>Une mise en prod un vendredi ?
+                Audacieux
+            </li>
+            <li>
+                <span class="emoji">⚽</span>Nous sommes les enfants de Lille
+            </li>
+            <li><span class="emoji">🤝</span>Le reste est négociable</li>
         </ul>
     </div>
 </section>
@@ -126,6 +171,22 @@
         ul {
             list-style: disc;
             padding-left: 2rem;
+        }
+
+        ul.lightning-round {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                display: flex;
+                align-items: baseline;
+                gap: var(--spacing-50);
+            }
+
+            .emoji {
+                filter: grayscale(1);
+                flex-shrink: 0;
+            }
         }
     }
 </style>

@@ -7,21 +7,25 @@
     },
     "scripts": {
         "start": "npx astro dev",
-        "build": "npx astro check && npx astro build",
+        "build": "npx astro build",
         "preview": "npx astro preview",
         "format": "npx prettier --write .",
-        "lint": "npx prettier --check ."
+        "lint": "npx prettier --check . && npx eslint . && npx astro check"
     },
     "dependencies": {
         "@tailwindcss/vite": "^4.3.1",
-        "astro": "^7.0.2",
+        "astro": "^7.0.3",
         "tailwindcss": "^4.3.1"
     },
     "devDependencies": {
         "@astrojs/check": "^0.9.9",
-        "prettier": "^3.8.4",
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.6.0",
+        "eslint-plugin-astro": "^2.1.1",
+        "prettier": "^3.9.1",
         "prettier-plugin-astro": "^0.14.1",
         "prettier-plugin-tailwindcss": "^0.8.0",
-        "typescript": "^6.0.3"
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.62.0"
     }
 }
